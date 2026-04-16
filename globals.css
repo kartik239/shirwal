@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  color: #e5e7eb;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(59,130,246,0.2), transparent 35%),
+    radial-gradient(circle at 85% 0%, rgba(236,72,153,0.2), transparent 30%),
+    radial-gradient(circle at 15% 85%, rgba(16,185,129,0.18), transparent 35%),
+    linear-gradient(135deg, #030712, #0b1020 40%, #111827);
+  background-attachment: fixed;
+}
+
+.glass {
+  @apply border border-white/20 bg-white/10 backdrop-blur-xl shadow-glass;
+}
