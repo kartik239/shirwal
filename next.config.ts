@@ -1,9 +1,13 @@
 import type { NextConfig } from "next";
 
+const repo = "shirwal";
+
 const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [{ protocol: "https", hostname: "**" }]
-  }
+  output: "export",
+  trailingSlash: true,
+  images: { unoptimized: true },
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`
 };
 
 export default nextConfig;
